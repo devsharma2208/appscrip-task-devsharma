@@ -1,0 +1,36 @@
+.dis-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+  }
+  .discover {
+    margin: 2.5rem;
+    > p {
+      font-size: 2.5rem;
+      color: rgb(107, 105, 105);
+      font-weight: 600;
+    }
+  }
+  .lorem {
+    width: 37rem;
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+    .discover {
+      margin: 1rem;
+      > p {
+        font-size: 1.2rem;
+        color: rgb(107, 105, 105);
+        font-weight: 600;
+      }
+    }
+   
+  }
+  @media only screen and (max-width: 400px) {
+    .lorem{
+      font-size: 0.8rem;
+      width: 22rem;
+    }
+  }

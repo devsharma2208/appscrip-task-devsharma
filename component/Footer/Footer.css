@@ -1,0 +1,76 @@
+.footer {
+  background: #000;
+  color: white;
+  padding: 2rem;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.footer-container {
+  border-bottom: 1px solid rgb(31, 30, 30);
+  padding-bottom: 3rem;
+
+  > div:first-child {
+    width: 20rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  > div:last-child {
+    width: 15rem;
+  }
+}
+.last-content {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.inp-con {
+  display: flex;
+  gap: 0.2rem;
+}
+.email {
+  padding: 0.6rem;
+  width: 15rem;
+  border-radius: 1px;
+}
+.subscribe {
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 2px;
+  background: #000;
+  color: gray;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 4rem;
+}
+.followUs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  >div{
+    display: flex;
+    gap: 1rem;
+    >svg{
+        border: 1px solid white;
+        padding: 0.2rem 0;
+        border-radius: 0.2rem;
+        height: 2rem !important;
+        color: white;
+    }
+  }
+}
+.copyRight{
+    margin-top: 3rem;
+    color: gray;
+}
