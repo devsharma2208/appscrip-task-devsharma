@@ -9,7 +9,7 @@ import Footer from "../../component/Footer/Footer";
 import { useState } from "react";
 
 export default function Home() {
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   console.log(showFilter);
