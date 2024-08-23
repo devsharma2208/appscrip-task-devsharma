@@ -10,7 +10,8 @@ import { useState } from "react";
 
 export default function Home() {
   const [showFilter, setShowFilter] = useState(false);
-  
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
   console.log(showFilter);
 
   return (
@@ -49,8 +50,17 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <Discover />
-        <FilterHeader showFilter={showFilter} setShowFilter={setShowFilter} />
-        <Products showFilter={showFilter}/>
+        <FilterHeader
+          showFilter={showFilter}
+          setShowFilter={setShowFilter}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
+        <Products
+          showFilter={showFilter}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
         <Footer />
       </main>
     </>
