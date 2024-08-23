@@ -97,10 +97,10 @@
     height: 100%;
     background: white;
     color: black;
-    z-index: 1000; /* Ensure it's on top of other content */
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Adjust timing and easing as needed */
+    transition: opacity 0.5s ease, visibility 0.5s ease; 
     display: flex;
     justify-content: center;
     align-items: center;
