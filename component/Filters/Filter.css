@@ -126,5 +126,8 @@
       font-weight: bold;
       color: black;
     }
+    > input {
+      background-color: white;
+    }
   }
 }
