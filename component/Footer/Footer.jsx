@@ -24,8 +24,10 @@ const Footer = () => {
         </div>
         <div className="contact">
           <h3>CONTACT US</h3>
-          <p>+91 256874136</p>
-          <p>acb@gmail.com</p>
+          <div>
+            <p>+91 256874136</p>
+            <p>acb@gmail.com</p>
+          </div>
         </div>
       </div>
       <div>
@@ -51,7 +53,6 @@ const Footer = () => {
             <InstagramIcon />
             <LinkedInIcon />
           </div>
-          <h4>metta muse ACCEPTS</h4>
         </div>
       </div>
       <div className="copyRight">

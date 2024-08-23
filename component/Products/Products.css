@@ -4,11 +4,15 @@
   margin: 2rem;
   height: fit-content;
 }
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
 .card-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 1rem;
 }
@@ -41,8 +45,11 @@
     /* margin-top: 1.2rem; */
   }
 }
-.title{
-    margin-top: 1.1rem;
+.title {
+  margin-top: 1.1rem;
+}
+.fav-icon-full {
+  color: red;
 }
 @media only screen and (max-width: 768px) {
   .products {
@@ -55,7 +62,7 @@
     margin: 1rem;
   }
   .card {
-    width: 8rem;
+    width: 9.5rem;
     height: 12rem;
 
     > div:first-child {
@@ -68,10 +75,11 @@
     margin-top: 0.5rem;
   }
   .des {
-    margin-top:0.5rem;
+    margin-top: 0.5rem;
     font-size: 0.5rem;
   }
-  .fav-icon {
+  .fav-icon,
+  .fav-icon-full {
     font-size: 20px;
     height: 0.8rem !important;
     margin-top: 1rem;

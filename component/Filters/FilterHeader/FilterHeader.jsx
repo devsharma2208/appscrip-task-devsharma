@@ -1,18 +1,22 @@
 import React from "react";
 import "../Filter.css";
-const FilterHeader = () => {
+const FilterHeader = ({ showFilter, setShowFilter }) => {
   return (
     <div>
       <div className="filters-con">
         <div className="content">
-          <h3>3425 ITEMS</h3>
-          <h4>HIDE FILTER</h4>
+          <h3>20 ITEMS</h3>
+          {showFilter ? (
+            <h4 onClick={() => setShowFilter(false)}>HIDE FILTER</h4>
+          ) : (
+            <h4 onClick={() => setShowFilter(true)}>SHOW FILTER</h4>
+          )}
         </div>
         <div className="filt">
           <h4>FILTER</h4>
         </div>
         <div className="recommended">
-          <div  className="lang">
+          <div className="lang">
             <select name="value" id="value">
               <option value="recommended">RECOMMENDED</option>
               <option value="newest">NEWEST FIRST</option>

@@ -1,81 +1,89 @@
 .filters-con {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem;
-    border-bottom: 1px solid rgb(205, 202, 202);
-    border-top: 1px solid rgb(205, 202, 202);
-    padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  border-bottom: 1px solid rgb(205, 202, 202);
+  border-top: 1px solid rgb(205, 202, 202);
+  padding: 0.4rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding: 1rem;
+  > h4 {
+    color: rgb(159, 156, 156);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    border-bottom: 1px solid rgb(171, 171, 171);
+    cursor: pointer;
   }
-  .content {
-    display: flex;
-    align-items: center;
-    gap: 6rem;
-    padding: 1rem;
-    > h4 {
-      color: rgb(159, 156, 156);
-      font-size: 1.2rem;
-      font-weight: 500;
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-      border-bottom: 1px solid rgb(171, 171, 171);
-    }
+}
+.filter-content {
+  padding: 1rem;
+  > div {
+    text-align: start;
+    font-weight: 500;
   }
-  .filter-content {
-    padding: 1rem;
-    > div {
-      text-align: start;
-      font-weight: 500;
-    }
-    > div:first-child {
-      border-bottom: 1px solid gray;
-    }
-  }
-  .filter-dropdown {
-    padding: 1rem 0;
+  > div:first-child {
     border-bottom: 1px solid gray;
-    > div > p {
-      margin-top: -0.5rem;
-      color: rgb(54, 52, 52);
-    }
-  }
-  
-  .checkbox {
     > input {
-      cursor: pointer;
-      margin: 0.8rem 0.5rem 0.5rem 0;
+      margin-bottom: 1rem;
+      margin-right: 0.5rem;
     }
   }
-  .unselect {
-    > span {
-      cursor: pointer;
-      color: rgb(197, 197, 197);
-      border-bottom: 1px solid rgb(222, 220, 220);
-    }
+}
+.filter-dropdown {
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+  > div > p {
+    /* margin-top: -0.5rem; */
+    color: rgb(54, 52, 52);
   }
-  .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+.disabled {
+  cursor: not-allowed;
+}
+
+.checkbox {
+  > input {
+    cursor: pointer;
+    margin: 0.8rem 0.5rem 0.5rem 0;
   }
-  
-  .filt{
+}
+.unselect {
+  margin-top: 1rem;
+  > span {
+    cursor: pointer;
+    color: rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(222, 220, 220);
+  }
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filt {
+  display: none;
+}
+.lang {
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .filter-content {
     display: none;
   }
-.lang{
-    border: none;
-}
-  @media only screen and (max-width: 768px) {
-    .filter-content{
-      display: none;
-    }
-    .content {
-      display: none;
-    }
-    .filt{
-      display: block;
-    }
-    .recommended{
-      font-size: 0.8rem;
-    }
+  .content {
+    display: none;
   }
-  
+  .filt {
+    display: block;
+  }
+  .recommended {
+    font-size: 0.8rem;
+  }
+}
